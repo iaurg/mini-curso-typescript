@@ -4,7 +4,7 @@
 
 [![Author](https://img.shields.io/badge/author-iaurg-1d5cb2?style=flat-square)](https://github.com/iaurg)
 
-Este repositório contém as minhas anotações e códigos apresentados no [mini curso de Typescript](📮) do Willian Justen para que possam ser consultados.
+Este repositório contém as minhas anotações e códigos apresentados no [mini curso de Typescript](https://www.youtube.com/watch?v=mRixno_uE2o&list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_) do Willian Justen para que possam ser consultados.
 
 ## O que é Typescript?
 
