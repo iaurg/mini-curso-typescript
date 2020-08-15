@@ -56,6 +56,8 @@ Para estruturar regras como qual pasta compilar, como compilar, onde salvar e af
 
 **object**: informa que é um objeto, podendo ter key:value com qualquer tipo
 
+**unknown**: pode passar qualquer coisa, porém no momento em que definir o tipo ele irá alterar para o tipo definido
+
 ## Inferência de tipos
 
 O Typescript identifica automaticamente valores de tipagens conhecidas ou que são percebidas de forma automática e infere esses tipos informando para você.
@@ -78,3 +80,31 @@ Precisa tipar apenas informações que o Typescript não conhece ou que o desenv
 type Uid = number | string | undefined;
 type Plataform = "Windows" | "Linux" | "Mac Os";
 ```
+
+## Type Intersection e Interface extends
+
+É possível "mesclar" tipagens para serem reaproveitadas em trechos de código utilizando intersection `&` em type ou `extends` em interface
+
+## Interface
+
+São conjuntos de dados para descrever e tipar a estrutura de um objeto.
+
+Normalmente utilizado para representar objetos mais complexos, pode ser utilizados para implementar classes `implements`
+
+## Types vs Interfaces
+
+Comece utilizando types e caso precise extender use interfaces, types normalmente serão mais utilizados. Interfaces são bastante utilizadas com criação de bibliotecas ou na criação de objetos/classes (OPP).
+
+Sempre preze pela consistência, se o seu código já existe com `types` ou `interface` mantenha o padrão, mas caso esteja iniciando um novo projeto preze por utilizar types e evoluir para interfaces conforme necessário.
+
+## Generics
+
+Reutilização de código, código mais genérico que aceita diversos tipos de entrada e argumentos em suas tipagens. É possivel com `generics` criar estruturas mais complexas e mutáveis com aceitação de diversos tipos em uma estrutura.
+
+## Type Utilities
+
+São utilizados para algumas transformações e modificações comuns que pode acontecer em seus tipos. Permite que você utilize um mesmo `type` / `interface` em diversas ocasiões moldando o que deseja utilizar deste tipo, por exemplo omitindo algo ou pegando apenas alguns valores.
+
+## Decorators
+
+Servem para anotar e interceptar ações dentro do código, marcando um ponto para executar outra tarefa.
