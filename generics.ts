@@ -1,9 +1,13 @@
-// Some patterns name for generics
-// S => State
-// T => Type
-// K => Key
-// V => Value
-// E => Element
+/*
+Docs for generics: https://www.typescriptlang.org/docs/handbook/generics.html
+
+Some patterns name for generics
+S => State
+T => Type
+K => Key
+V => Value
+E => Element 
+*/
 
 type numberOrString = number | string;
 
